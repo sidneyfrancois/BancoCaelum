@@ -19,6 +19,11 @@ public class Empresa {
 		}
 	}
 	
-	
+	void mostraEmpregados() {
+		System.out.println("Nome da empresa: " + this.nome + " CNPJ: " + this.cnpj);
+		for(int i=0; i<numfuncionarios; i++) {
+			System.out.println("Empregado de nome: " + empregados[i].getSalario());
+		}
+	}
 	
 }

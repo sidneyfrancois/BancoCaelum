@@ -1,8 +1,8 @@
 
 public class Funcionario {
 	
-	double salario;
-	String nome;
+	private double salario;
+	private String nome;
 	
 	void recebeAumento(double aumento){
 		this.salario += aumento;
@@ -14,6 +14,10 @@ public class Funcionario {
 	
 	void mostraNome() {
 		System.out.println("Nome: " + this.nome);
+	}
+	
+	double getSalario() {
+		return this.salario;
 	}
 	
 }
